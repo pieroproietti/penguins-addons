@@ -81,3 +81,11 @@ And produce your customized live:
 ```
 sudo eggs produce --fast  --theme ../penguins-addons/educaandos-plus
 ```
+
+# Further plans
+
+A theme is a type of addons for eggs. There are other addons as well: ```adapt``` that provides a link to resize the window on a virtual machine, ```pve``` that shows on the desktop the link to the local Proxmox VE server, ```rsupport```, etc.
+
+I hope with time -including through collaborations - to add more possibilities to both ```addons``` and ```themes```. You don't necessarily have to be a developer to create a theme, in fact graphic designers are welcome.
+
+You can request me to be added as a contributor to this repository and thus participate in the development. 
