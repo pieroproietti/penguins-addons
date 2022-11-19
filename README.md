@@ -4,7 +4,7 @@ A theme for eggs, let you to customize it and save your time.
 
 An eggs theme is simply an organized set of files and directories, YAML being the most widely used.
 
-EducaAndOS is the first example of an external eggs theme available, others themes are: neon, telos, ufficiozero and waydroid imported from the previous themes included in eggs before.
+```educaandos``` is the first example of an external eggs theme available, others themes are: ```neon```, ```telos```, ```ufficiozero``` and ```waydroid``` imported from the previous themes included in eggs before.
 
 # Themes
 
