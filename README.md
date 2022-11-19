@@ -8,11 +8,29 @@ EducaAndOS is the first example of an external eggs theme available, previous th
 
 Others themes are: neon, telos, ufficiozero and waydroid imported from the previous themes who was included in eggs.
 
-We currently have the following directories:
-* applications
-* artwork
-* calamares
-* livecd
+## Themes
+
+You can customize the boot of live images made with eggs using **themes**.
+
+A **theme** consists of a simple folder under addons, called with the name of 
+vendor (in the example: blissos), that includes:
+
+```
+blissos/
+    theme
+        applications
+        artwork
+        calamares
+            branding
+            modules
+        livecd
+```
+
+* in **applications** we have the desktop link named **install-debian.desktop** into calamares startup;
+* in **artwork** the icon named **install-debian.png** for the calamares launcher
+* in **calamares** we have two directories: **branding** with your slides for calamares and **modules**
+* **livecd** includes grub and isolinux templates, buoot splash named **splash.png** and theme for grub and isolinux.
+
 
 ## applications
 Just a desktop link, it will be copied to ```/usr/share/applications/``` and on the Desktop.
