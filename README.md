@@ -88,4 +88,4 @@ A theme is a type of addons for eggs. There are other addons as well: ```adapt``
 
 I hope with time -including through collaborations - to add more possibilities to both ```addons``` and ```themes```. You don't necessarily have to be a developer to create a theme, in fact graphic designers are welcome.
 
-You can request me to be added as a contributor to this repository and thus participate in the development. 
+You can request [me](https://t.me/penguins_eggs) to be added as a contributor to this repository and thus participate in the development. 
