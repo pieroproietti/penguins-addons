@@ -62,14 +62,15 @@ In EducaAndOS to ensure administration capability for our user, we need a groups
 ## livecd
 Take cure of the apparence of your live.
 
-## usage:
+# usage:
 
 ```
 sudo eggs produce --fast --theme ../path/to/theme
 ```
-## example
 
-Clone this repository:
+## example:
+
+clone this repository:
 
 ```
 git clone https://github.com/pieroproietti/penguins-addons```
