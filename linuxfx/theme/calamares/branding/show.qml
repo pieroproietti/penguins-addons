@@ -1,27 +1,31 @@
-/* === This file is part of Calamares - <http://github.com/calamares> ===
- *
- *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
- *   Copyright 2018, Jonathan Carter <jcc@debian.org>
- *
- *   Calamares is free software: you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation, or (at your option) any later version.
- *
- *   Calamares is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
- */
+/*
+    Copyright 2019 Harald Sitter <sitter@kde.org>
 
+    This program is free software; you can redistribute it and/or
+    modify it under the terms of the GNU General Public License as
+    published by the Free Software Foundation; either version 3 of
+    the License or any later version accepted by the membership of
+    KDE e.V. (or its successor approved by the membership of KDE
+    e.V.), which shall act as a proxy defined in Section 14 of
+    version 3 of the license.
 
-// https://github.com/calamares/calamares-extensions
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+    PLEASE NOTE:
+    This is not the original neon theme, but an adpment made for eggs 
+    from eggs author: Piero Proietti <piero.proietti@gmail.com> 
+*/
 
 
 import QtQuick 2.0;
 import calamares.slideshow 1.0;
+
 
 Presentation
 {
@@ -33,17 +37,17 @@ Presentation
     }
 
     Timer {
-        id: advanceTimer
-        interval: 7500
-        running: true
+        id: timer
+        interval: 5000
+        running: false
         repeat: true
         onTriggered: nextSlide()
     }
 
     Slide {
         Image {
-            id: reproductiveSystem
-            source: "1-linuxfx-presentation.png"
+            id: slide1
+            source: "linuxfx-presentation.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -52,22 +56,22 @@ Presentation
         }
          Text {
             font.family: "Helvetica"
-            font.pixelSize : 22
-            color: "#aa3333"
-            anchors.horizontalCenter: reproductiveSystem.horizontalCenter
+            font.pixelSize : 20
+            color: "#fcfcfc"
+            anchors.horizontalCenter: slide1.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>Penguin's eggs</h1><br/>"+
-                  "<h2>eggs: the reproductive system of penguins!</h2>"+
-                  "<h3>https://penguins-eggs.net</h3>")
+                  text: qsTr("<h1>LinuxFX 11</h1><br/>" +
+                  "<h2>Fast, stable and very safe.<h2>" +
+                  "<h3>https://https://www.linuxfx.org/</h3>")
             wrapMode: Text.WordWrap
-            width: 800
+            width: kde.width
             horizontalAlignment: Text.Center
         }
     }
     Slide {
         Image {
-            id: startReproduction
-            source: "2-linuxfx-presentation.png"
+            id: slide2
+            source: "linuxfx-presentation.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -76,23 +80,22 @@ Presentation
         }
          Text {
             font.family: "Helvetica"
-            font.pixelSize : 22
-            // color: "#002439"
-            color: "#aa3333"
-            anchors.horizontalCenter: startReproduction.horizontalCenter
+            font.pixelSize : 20
+            color: "#fcfcfc"
+            anchors.horizontalCenter: slide2.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>Penguin's eggs</h1><br/>"+
-                  "<h2>Start the reproduction of your system! Produce yours eggs and simply install them on another computer. You can do it!</h2>")
+            text: qsTr("<h1>LinuxFX 11</h1><br/>" +
+                  "<h2>The Microsoft Windows 11 interface with the speed<br/>and security of Linux</h2>")
             wrapMode: Text.WordWrap
-            width: 800
+            width: neon.width
             horizontalAlignment: Text.Center
         }
     }
 
     Slide {
         Image {
-            id: itsYourSystem
-            source: "3-linuxfx-presentation.png"
+            id: slide3
+            source: "linuxfx-presentation.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -101,22 +104,22 @@ Presentation
         }
          Text {
             font.family: "Helvetica"
-            font.pixelSize : 22
-            color: "#aa3333"
-            anchors.horizontalCenter: itsYourSystem.horizontalCenter
+            font.pixelSize : 20
+            color: "#fcfcfc"
+            anchors.horizontalCenter: slide3.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>Penguin's eggs</h1><br/>"+
-                  "<h2>It's your system!<br/>Bring it with you and use/install it elsewhere.</h2>")
+            text: qsTr("<h1>LinuxFX 11</h1><br/>" +
+                  "<h2>Please wait, we are hatching...<br/>Don't disturb the process,<br/>in few time You will have a new penguin.</h2>")
             wrapMode: Text.WordWrap
-            width: 800
+            width: plasma.width
             horizontalAlignment: Text.Center
         }
     }
 
     Slide {
         Image {
-            id: eggsPresentation
-            source: "4-linuxfx-presentation.png"
+            id: slide4
+            source: "linuxfx-presentation.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -125,94 +128,19 @@ Presentation
         }
          Text {
             font.family: "Helvetica"
-            font.pixelSize : 22
-            color: "#aa3333"
-            anchors.horizontalCenter: eggsPresentation.horizontalCenter
+            font.pixelSize : 20
+            color: "#fcfcfc"
+            anchors.horizontalCenter: slide4.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>Penguin's eggs</h1><br/>"+
-                  "<h2>Eggs is a terminal tool,<br/>but it's simple and nice. Write eggs without else and get the commands list</h2>")
+            text: qsTr("<h1>LinuxFX 11</h1><br/>" +
+                  "<h2>Created by Rafael Rachid</h2><br/>" +
+                  "<h3>email: rafael@linuxfx.org</h3>")
             wrapMode: Text.WordWrap
-            width: 800
+            width: secure.width
             horizontalAlignment: Text.Center
         }
     }
 
-    Slide {
-        Image {
-            id: waitHatching
-            source: "5-linuxfx-presentation.png"
-            anchors.centerIn: parent
-            anchors.top: background.bottom
-            width: 810
-            height: 485
-            fillMode: Image.PreserveAspectFit
-        }
-         Text {
-            font.family: "Helvetica"
-            font.pixelSize : 22
-            color: "#aa3333"
-            anchors.horizontalCenter: waitHatching.horizontalCenter
-            anchors.top: background.top
-            text: qsTr("<h1>Penguin's eggs</h1><br/>"+
-                  "<h2>Please wait, we are hatching...<br/>Don't disturb the process, in few time You will have a new penguin.</h2>")
-            wrapMode: Text.WordWrap
-            width: 800
-            horizontalAlignment: Text.Center
-        }
-    }
-
-    Slide {
-        Image {
-            id: followPenguins
-            source: "6-linuxfx-presentation.png"
-            anchors.centerIn: parent
-            anchors.top: background.bottom
-            width: 810
-            height: 485
-            fillMode: Image.PreserveAspectFit
-        }
-         Text {
-            font.family: "Helvetica"
-            font.pixelSize : 22
-            color: "#aa3333"
-            anchors.horizontalCenter: slide6.horizontalCenter
-            anchors.top: background.top
-            text: qsTr("<h1>Penguin's eggs</h1><br/>"+
-                  "<h3>Follow penguin's eggs development, can be funny.</h3>" +
-                  "<h3>Developers, graphics and testers need feedback and help.</h3>" +
-                  "<h3>Use this tool, enjoy and if you can collaborate.</h3>"+
-                  "<br><h2>That's all peoples!</h2>")
-            wrapMode: Text.WordWrap
-            width: 800
-            horizontalAlignment: Text.Center
-        }
-    }
-
-    Slide {
-        Image {
-            id: createdBy
-            source: "7-linuxfx-presentation.png"
-            anchors.centerIn: parent
-            anchors.top: background.bottom
-            width: 810
-            height: 485
-            fillMode: Image.PreserveAspectFit
-        }
-         Text {
-            font.family: "Helvetica"
-            font.pixelSize : 22
-            color: "#aa3333"
-            anchors.horizontalCenter: followPenguins.horizontalCenter
-            anchors.top: background.top
-            text: qsTr("<h1>Penguin's eggs</h1><br/>"+
-                  "<h2>Created by Piero Proietti</h2><br/>"+
-                  "<h4>issues: htts://github.com/pieroproietti/penguins-eggs</h4>"+
-                  "<h3>email: piero.proietti@gmail.com</h3>")
-            wrapMode: Text.WordWrap
-            width: 800
-            horizontalAlignment: Text.Center
-        }
-    }
     // When this slideshow is loaded as a V1 slideshow, only
     // activatedInCalamares is set, which starts the timer (see above).
     //
@@ -228,4 +156,3 @@ Presentation
         console.log("QML Component (default slideshow) deactivated");
     }
 }
-
