@@ -62,7 +62,7 @@ Presentation
             anchors.top: background.top
                   text: qsTr("<h1>LinuxFX 11</h1><br/>" +
                   "<h2>Fast, stable and very safe.<h2>" +
-                  "<h3>https://https://www.linuxfx.org/</h3>")
+                  "<h3>https://linuxfx.org/</h3>")
             wrapMode: Text.WordWrap
             width: kde.width
             horizontalAlignment: Text.Center
