@@ -47,7 +47,7 @@ Presentation
     Slide {
         Image {
             id: slide1
-            source: "kde.png"
+            source: "neon.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -71,7 +71,7 @@ Presentation
     Slide {
         Image {
             id: slide2
-            source: "neon.png"
+            source: "kde.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -84,7 +84,7 @@ Presentation
             color: "#fcfcfc"
             anchors.horizontalCenter: slide2.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>LinuxFX 11</h1><br/>" +
+            text: qsTr("<h1>LinuxFX</h1><br/>" +
                   "<h2>The Microsoft Windows interface with the speed<br/>and security of Linux</h2>")
             wrapMode: Text.WordWrap
             width: neon.width
@@ -108,7 +108,7 @@ Presentation
             color: "#fcfcfc"
             anchors.horizontalCenter: slide3.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>LinuxFX 11</h1><br/>" +
+            text: qsTr("<h1>LinuxFX</h1><br/>" +
                   "<h2>Please wait, we are hatching...<br/>Don't disturb the process,<br/>in few time You will have a new penguin.</h2>")
             wrapMode: Text.WordWrap
             width: plasma.width
@@ -132,7 +132,7 @@ Presentation
             color: "#fcfcfc"
             anchors.horizontalCenter: slide4.horizontalCenter
             anchors.top: background.top
-            text: qsTr("<h1>LinuxFX 11</h1><br/>" +
+            text: qsTr("<h1>LinuxFX</h1><br/>" +
                   "<h2>Created by Rafael Rachid</h2><br/>" +
                   "<h3>email: rafael@linuxfx.org</h3>")
             wrapMode: Text.WordWrap
