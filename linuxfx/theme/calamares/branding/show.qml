@@ -47,7 +47,7 @@ Presentation
     Slide {
         Image {
             id: slide1
-            source: "linuxfx-presentation.png"
+            source: "kde.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -60,7 +60,7 @@ Presentation
             color: "#fcfcfc"
             anchors.horizontalCenter: slide1.horizontalCenter
             anchors.top: background.top
-                  text: qsTr("<h1>LinuxFX 11</h1><br/>" +
+                  text: qsTr("<h1>LinuxFX</h1><br/>" +
                   "<h2>Fast, stable and very safe.<h2>" +
                   "<h3>https://linuxfx.org/</h3>")
             wrapMode: Text.WordWrap
@@ -71,7 +71,7 @@ Presentation
     Slide {
         Image {
             id: slide2
-            source: "linuxfx-presentation.png"
+            source: "neon.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -85,7 +85,7 @@ Presentation
             anchors.horizontalCenter: slide2.horizontalCenter
             anchors.top: background.top
             text: qsTr("<h1>LinuxFX 11</h1><br/>" +
-                  "<h2>The Microsoft Windows 11 interface with the speed<br/>and security of Linux</h2>")
+                  "<h2>The Microsoft Windows interface with the speed<br/>and security of Linux</h2>")
             wrapMode: Text.WordWrap
             width: neon.width
             horizontalAlignment: Text.Center
@@ -95,7 +95,7 @@ Presentation
     Slide {
         Image {
             id: slide3
-            source: "linuxfx-presentation.png"
+            source: "plasma.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
@@ -119,7 +119,7 @@ Presentation
     Slide {
         Image {
             id: slide4
-            source: "linuxfx-presentation.png"
+            source: "secure.png"
             anchors.centerIn: parent
             anchors.top: background.bottom
             width: 810
