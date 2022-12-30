@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=LinuxFX mkdesktop add
+Exec=linuxfx-mkdesktop.sh
+StartupNotify=false
+NoDisplay=true
+
+X-GNOME-Autostart-Phase=Initialization
+X-KDE-autostart-phase=1
