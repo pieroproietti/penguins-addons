@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# linuxfx-mkdesktop
+# 
+if [ ! -f ~/.linuxfx ]; then
+    . /usr/bin/linuxfx-mkdesktop
+fi
