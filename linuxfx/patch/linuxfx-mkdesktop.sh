@@ -2,7 +2,7 @@
 #
 # linuxfx-mkdesktop.sg
 # 
-if [ ! -d ~/.linuxfx ]; then
+if [ ! -f ~/.linuxfx ]; then
     xdg-user-dirs-update
     xdg-user-dirs-update --force
     penguins-eggs-links-add.sh
