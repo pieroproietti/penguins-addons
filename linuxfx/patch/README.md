@@ -7,6 +7,13 @@ LinuxFX è una customizzazione di Linux molto particolare, pur essendo basata su
 
 Una distribuzione interessante ma che in ultima analisi peggiora non di poco la sicurezza.
 
+```
+cp linuxfx-links-add.desktop /etc/xdg/autostart
+cp linuxfx-links-add.sh/user/bin
+cat linuxfx-mkdesktop.sh >> ~/.bashrc
+```
+
+
 
 
 
