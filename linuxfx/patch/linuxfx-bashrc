@@ -1,7 +1,0 @@
-#!/bin/sh
-#
-# linuxfx-mkdesktop
-# 
-if [ ! -f ~/.linuxfx-eggs ]; then
-    . /usr/bin/linuxfx-mkdesktop
-fi
