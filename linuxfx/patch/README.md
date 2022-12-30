@@ -11,7 +11,7 @@ Una distribuzione interessante ma che in ultima analisi peggiora non di poco la 
 sudo cp linuxfx-links-add.desktop /etc/xdg/autostart
 sudo cp linuxfx-links-add.sh /usr/bin
 sudo cp linuxfx-mkdesktop.sh /usr/bin
-cat linuxfx-bashrc >> .bashrc
+cat linuxfx-bashrc >> ~/.bashrc
 ```
 
 
