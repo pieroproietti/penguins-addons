@@ -2,6 +2,6 @@
 #
 # linuxfx-mkdesktop
 # 
-if [ ! -f ~/.linuxfx ]; then
+if [ ! -f ~/.linuxfx-eggs ]; then
     . /usr/bin/linuxfx-mkdesktop
 fi
