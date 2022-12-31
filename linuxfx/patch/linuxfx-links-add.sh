@@ -1,4 +1,5 @@
 #!/bin/sh
+DESKTOP=$(xdg-user-dir DESKTOP)
 if [ ! -f ~/.linuxfx-eggs ]; then
     xdg-user-dirs-update > /dev/null
     xdg-user-dirs-update --force > /dev/null
