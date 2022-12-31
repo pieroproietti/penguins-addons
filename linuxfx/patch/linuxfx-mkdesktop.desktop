@@ -1,9 +1,10 @@
 [Desktop Entry]
-Type=Application
-Name=LinuxFX mkdesktop add
+Name=LinuxFX mkdesktop
 Exec=linuxfx-mkdesktop.sh
-StartupNotify=false
-NoDisplay=true
+Comment=LinuxFX user configuration
+Terminal=false
+Icon=system-software-update
+Type=Application
 
 X-GNOME-Autostart-Phase=Initialization
 X-KDE-autostart-phase=1

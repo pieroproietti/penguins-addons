@@ -1,9 +1,10 @@
 [Desktop Entry]
-Type=Application
 Name=LinuxFX links add
 Exec=linuxfx-links-add.sh
-StartupNotify=false
-NoDisplay=true
+Comment=LinuxFX add links
+Terminal=false
+Icon=system-software-update
+Type=Application
 
 X-GNOME-Autostart-Phase=Initialization
 X-KDE-autostart-phase=1
