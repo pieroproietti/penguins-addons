@@ -1,10 +1,14 @@
 #!/bin/sh
-DESKTOP=$(xdg-user-dir DESKTOP)
-# Create ~/Desktop just in case this runs before the xdg folder creation script
-mkdir -p $DESKTOP
-cp /usr/share/applications/penguins-eggs.desktop $DESKTOP
-cp /usr/share/applications/devicemanager.desktop $DESKTOP
-cp /usr/share/applications/microsoft-edge.desktop $DESKTOP
-cp /opt/Linuxfx/helloa/trash.desktop $DESKTOP
-cp /usr/share/applications/windowsfx-android.desktop $DESKTOP
-chmod +x $DESKTOP/*.desktop
+if [ ! -f ~/.linuxfx-eggs ]; then
+    xdg-user-dirs-update > /dev/null
+    xdg-user-dirs-update --force > /dev/null
+    penguins-links-add.sh > /dev/null
+    linuxfx-links-add.sh > /dev/null
+    cp /usr/share/applications/penguins-eggs.desktop $DESKTOP > /dev/null
+    cp /usr/share/applications/devicemanager.desktop $DESKTOP > /dev/null
+    cp /usr/share/applications/microsoft-edge.desktop $DESKTOP > /dev/null
+    cp /opt/Linuxfx/helloa/trash.desktop $DESKTOP > /dev/null
+    cp /usr/share/applications/windowsfx-android.desktop $DESKTOP > /dev/null
+    chmod +x $DESKTOP/*.desktop > /dev/null
+    touch ~/.linuxfx-eggs > /dev/null
+fi
